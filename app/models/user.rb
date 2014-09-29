@@ -50,7 +50,7 @@ class User < ActiveRecord::Base
 
 	# Activate an account
 	def activate
-		update_colums(:activated, true,
+		update_columns(:activated, true,
 			:activated_at, Time.zone.now)
 	end
 
